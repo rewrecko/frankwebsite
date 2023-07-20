@@ -1,0 +1,133 @@
+
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.input-group#check_testo {
+    display: flex;
+    align-items: top;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    font-size: 15px;
+    font-family: D-DIN;
+}
+
+.input-group span {
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    font-family: D-DIN;
+}
+
+#submit-error {
+    margin-top: 20px;
+    color: white;
+    font-family: D-DIN;
+}
+
+#form label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: black;
+    cursor: text;
+    font-family: D-DIN;
+    transition: 0.2s;
+}
+
+button {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #715CF3;
+    width: 100%;
+    cursor: pointer;
+    font-family: D-DIN;
+    font-size: 21px;
+    transition: 0.2s;
+}
+
+button:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+  }
+
+
+#form input:focus ~ label,
+#form input:valid ~ label,
+#form textarea:focus ~ label,
+#form textarea:valid ~ label {
+    top: -35px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group {
+    flex-basis: 48%;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    background: transparent;
+    border-width: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+input[type="checkbox"]:after {
+    content: '\2714';
+    font-size: 15px;
+    color: white;
+    display: none;
+}
+
+input[type="checkbox"]:checked {
+    background: transparent;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 680px) {
+
+    .row {
+        display: block;
+    }
+
+    .row .input-group {
+        flex-basis: 100%;
+    }
+}

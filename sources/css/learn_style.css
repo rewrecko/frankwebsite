@@ -1,0 +1,120 @@
+body {
+  background-color: #2f1ca4;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenitore {
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+  }
+  
+.colonne {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.colonna {
+  flex: 1;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 8px;
+  transition: 0.5s;
+}
+
+.colonna_resume {
+  flex: 1;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.learn_sfondo {
+  background-image: url("../images/rivet.jpg");
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.resume_sfondo:hover {
+  filter: grayscale(0%);
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+.blocco {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#profile_picture {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*
+
+@media screen and (max-width: 980px) {
+    .colonne .colonna {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+
+    .colonne .colonna:last-child {
+        flex-basis: 100%;
+        margin: 0;
+    }
+
+    .colonne .colonna:nth-last-child(2) {
+        margin-right: 0;
+    }
+
+    .colonna_resume {
+        height: 250px;
+        margin-bottom: -20px;
+    }
+}
+
+*/
+
+@media screen and (max-width: 680px) {
+  hr.solid {
+    display: none;
+  }
+
+  .colonne .colonna {
+    flex-basis: 100% !important;
+    margin: 0 0 5px 0 !important;
+  }
+
+  .colonna_resume {
+    height: 250px;
+    margin-bottom: -20px;
+  }
+
+  #foto {
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 100px;
+    margin-bottom: -35px;
+  }
+
+  #foto_2 {
+    display: none;
+  }
+}

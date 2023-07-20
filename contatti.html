@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- site style -->
+    <link rel="stylesheet" href="sources/css/style.css" />
+    <link rel="stylesheet" href="sources/css/fonts.css" />
+    <!-- menu style -->
+    <link rel="stylesheet" href="sources/css/style_menu.css" />
+    <!-- form style -->
+    <link rel="stylesheet" href="sources/css/form.css" />
+    <!-- footer style -->
+    <link rel="stylesheet" href="sources/css/footer.css" />
+    <title>Contatti • Francesco Conte</title>
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav>
+      <div id="logo_box" onclick="location.href='#';">
+        <img id="img_pic" src="sources\images\image_logo.png" />
+        <label class="logo">frank_withyou</label>
+      </div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <img
+          id="open"
+          onclick="menu()"
+          style="vertical-align: middle; display: inline"
+          src="sources\images\social-icons\hamburger.svg"
+        />
+        <img
+          id="close"
+          onclick="menu()"
+          style="vertical-align: middle; display: none"
+          src="sources\images\social-icons\cross-medium.svg"
+        />
+        <script src="sources/js/script-menu.js"></script>
+      </label>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a class="active" href="#">contact</a></li>
+        <li><a href="learn.html">learn</a></li>
+        <li><a href="#">feedback</a></li>
+      </ul>
+    </nav>
+    <!-- MENU -->
+
+    <div id="form" class="contenitore">
+      <div style="padding: 20px; color: white">
+        <h1>Hai bisogno di informazioni?</h1>
+        <br />
+        <h2>E chi se ne fotte, dico io.</h2>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          facilis rerum soluta rem assumenda voluptatem, eos pariatur,
+          obcaecati, laboriosam reiciendis modi consequuntur odio. Voluptatem
+          omnis, et inventore facere tempore eveniet eius. Odio temporibus
+          ducimus sequi ex itaque obcaecati aliquid? Voluptate id impedit
+          architecto est libero praesentium quia sequi labore necessitatibus!
+        </p>
+        <br />
+      </div>
+
+      <div class="colonne">
+        <div class="colonna">
+          <form class="contact-form" action="contactform.php" method="post">
+            <div class="row">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="name"
+                  id="contact-name"
+                  onkeyup="validateName()"
+                />
+                <span id="name-error"></span>
+                <label for="name">Nome</label>
+              </div>
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="mail"
+                  id="contact-mail"
+                  onkeyup="validateMail()"
+                />
+                <span id="mail-error"></span>
+                <label for="mail">E-mail</label>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <input
+                type="text"
+                name="subject"
+                id="contact-subject"
+                onkeyup="validateSubject()"
+              />
+              <span id="subject-error"></span>
+              <label for="subject">Oggetto</label>
+            </div>
+            <div class="input-group">
+              <textarea
+                name="message"
+                rows="8"
+                id="contact-message"
+                onkeyup="validateMessage()"
+              ></textarea>
+              <span id="message-error"></span>
+              <label for="message">Messaggio</label>
+            </div>
+
+            <div id="check_testo" class="input-group">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                style="margin-right: 10px"
+                onkeyup="validateCheck()"
+              />
+              <p style="color: white; font-size: 18px; margin-top: 2px">
+                Acconsento a Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Ea ipsa, facere minus obcaecati cumque ad?
+              </p>
+            </div>
+
+            <button type="submit" name="submit" onclick="return validateForm()">
+              INVIA MAIL
+            </button>
+            <p id="submit-error"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="sticky-footer">
+      <div class="footer-box">
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\instagram.svg"
+        /></a>
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\artstation.svg"
+        /></a>
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\linkedin.svg"
+        /></a>
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\mail.svg"
+        /></a>
+      </div>
+      <p>© 2023 | made with love by ptonilane</p>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- SCRIPT -->
+    <script src="sources/js/swiper-bundle.min.js"></script>
+    <script src="sources/js/script-reviews.js"></script>
+    <!-- SCRIPT -->
+    <script src="sources/js/form_script.js"></script>
+  </body>
+</html>

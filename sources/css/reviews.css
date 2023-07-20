@@ -1,0 +1,181 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  row-gap: 30px;
+  overflow: hidden;
+}
+
+.testimonial .image {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slide p {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+  padding: 0 100px;
+  color: white;
+}
+
+.slide .details {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.details-values {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.details .name {
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+  font-family: D-DIN;
+}
+
+.details .job {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  font-family: D-DIN;
+}
+
+.nav-btn {
+  transform: translateY(30px);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px !important;
+  color: white;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+.software {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.software-spec {
+  width: 100%;
+  flex-direction: column;
+  margin-left: 15px;
+  text-align: left;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+
+.skill-bar {
+  height: 15px;
+  background: #715cf3;
+  border-radius: 3px;
+}
+
+.skill-per {
+  height: 15px;
+  background: #fff;
+  border-radius: 3px;
+  position: relative;
+  font-family: D-DIN;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  font-size: 20px;
+  right: 0;
+  top: -4px;
+  transform: translateX(120%);
+}
+
+.skill-per::after {
+  content: "";
+  position: absolute;
+}
+
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+
+  #bio {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 680px) {
+  .slide p {
+    text-align: center;
+    font-size: 20px !important;
+    font-weight: 400;
+    padding: 0 20px;
+    color: white;
+  }
+
+  .testimonial .image {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .details .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    font-family: D-DIN;
+  }
+
+  .details .job {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    font-family: D-DIN;
+  }
+
+  #bio {
+    display: none;
+  }
+
+}

@@ -1,0 +1,45 @@
+.sticky-footer {
+  position: sticky;
+  top: 100%;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    padding: 5px;
+}
+
+footer p {
+  
+  font-size: 0.8em;
+  color: white;
+  font-size: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  margin: 1em 0;
+}
+
+footer ul li a {
+  padding: 1em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+.footer-link:hover {
+  background: none;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #180041;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  padding: 1em;
+  font-size: 1.2rem;
+}

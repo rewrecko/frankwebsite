@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- site style -->
+    <link rel="stylesheet" href="sources/css/style.css" />
+    <link rel="stylesheet" href="sources/css/fonts.css" />
+    <!-- menu style -->
+    <link rel="stylesheet" href="sources/css/style_menu.css" />
+    <!-- carousel style -->
+    <link rel="stylesheet" href="sources/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="sources/css/carousel_new.css" />
+    <!-- reviews style -->
+    <link rel="stylesheet" href="sources/css/reviews.css" />
+    <!-- footer style -->
+    <link rel="stylesheet" href="sources/css/footer.css" />
+    <!-- carousel script -->
+    <title>Resume • Francesco Conte</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo_box" onclick="location.href='#';">
+        <img id="img_pic" src="sources\images\image_logo.png" />
+        <label class="logo">frank_withyou</label>
+      </div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <img
+          id="open"
+          onclick="menu()"
+          style="vertical-align: middle; display: inline"
+          src="sources\images\social-icons\hamburger.svg"
+        />
+        <img
+          id="close"
+          onclick="menu()"
+          style="vertical-align: middle; display: none;"
+          src="sources\images\social-icons\cross-medium.svg"
+        />
+        <script src="sources/js/script-menu.js"></script>
+      </label>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a class="active" href="#">resume</a></li>
+        <li><a href="contatti.html">contact</a></li>
+        <li><a href="learn.html">learn</a></li>
+        <li><a href="#">feedback</a></li>
+      </ul>
+    </nav>
+
+    <div class="contenitore">
+      <section
+        class="colonne"
+        style="
+          background-color: #715cf3;
+          border-radius: 10px;
+          margin: 10px;
+          padding: 10px;
+        "
+      >
+        <div
+          id="bio"
+          class="colonna"
+          style="align-items: left; flex-basis: 20%"
+        >
+          <img id="profile_picture" src="sources\images\profile_picture.jpg" />
+        </div>
+        <div
+          class="colonna"
+          style="
+            justify-content: center;
+            flex-basis: 70%;
+            row-gap: 10px;
+            color: white;
+          "
+        >
+          <h1 style="font-size: 42px">Chi sono</h1>
+          <h2 style="font-size: 30px">3D Artist - Texturing, Lookdev</h2>
+          <p style="font-size: 18px">
+            Ho lavorato come texture artist, per riprodurre materiale fotografico in 3D. <br>
+            Uso tecniche di painting e texturing procedurale. <br>
+            Per presentare al meglio i progetti dei miei clienti ho sviluppato competenze di lookdev e lighiting. Esperienza con i modelli low poly ed il baking.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="contenitore" style="height: 100%">
+      <section class="container">
+        <div class="testimonial swiper myReviews" style="z-index: 0">
+          <div class="testi-content swiper-wrapper">
+            <div class="slide swiper-slide">
+              <p>
+                Francesco è un esperto del 3D. Unisce arte e tecnica con
+                esemplare padronanza, rispettando le tempistiche sempre. Mi
+                colpisce la sua capacità di gestire i colori.
+              </p>
+              <div
+                class="details"
+                onclick="window.open('https://www.linkedin.com/in/lucia-esposito-18b36290/')"
+                style="cursor: pointer"
+              >
+                <img src="sources\images\review1.jpg" alt="" class="image" />
+                <div class="details-values">
+                  <span class="name">Lucia Esposito</span>
+                  <span class="job">Designer</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <p>
+                MiaSuite si è affidata a Francesco per il texturing dei propri
+                prodotti. Un professionista del settore con competenze
+                orizzontali, con particolare attenzione verso materiali e
+                lighting.
+              </p>
+              <div
+                class="details"
+                onclick="window.open('https://www.linkedin.com/in/vincenzofrenna/')"
+                style="cursor: pointer"
+              >
+                <img src="sources\images\review2.jpg" alt="" class="image" />
+                <div class="details-values">
+                  <span class="name">Vincenzo Frenna</span>
+                  <span class="job">Art director</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <p>
+                Francesco é gran conoscitore del 3D. Grazie alla sua profonda
+                preparazione, spazia da un software all’altro, senza problemi.
+                Un professionista a tutto tondo, serio e affidabile.
+              </p>
+              <div
+                class="details"
+                onclick="window.open('https://www.instagram.com/drew94100_/')"
+                style="cursor: pointer"
+              >
+                <img src="sources\images\review3.jpg" alt="" class="image" />
+                <div class="details-values">
+                  <span class="name">Dario Ricciotti</span>
+                  <span class="job">3D Artist</span>
+                </div>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <p>
+                Francesco ten nu pistill che è tropp bell, gruoss e tutt
+                scapucchiat
+              </p>
+              <div class="details">
+                <img src="sources\images\review2.png" alt="" class="image" />
+                <div class="details-values">
+                  <span class="name">Signora Pina</span>
+                  <span class="job">Pescivendola</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next nav-btn"></div>
+          <div class="swiper-button-prev nav-btn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="contenitore">
+      <div class="colonne_resume">
+        <div class="colonna" style="flex-basis: 40%;">
+          
+            <div class="blocco_resume" style="background-color: #715cf3">
+              <h2 style="font-size: 30px; text-align: center;">Education</h2>
+              <br />
+  
+              <h3 style="text-align: left">ILAS Academy</h2>
+              <br />
+              <p style="font-size: 18px; margin-left: 5px; text-align: justify">
+                • Pixologic ZBrush - 2019 <br />
+                • 3D graphics - Autodesk Maya - 2017
+              </p>
+  
+              <br />
+              <h3 style="text-align: left">Genius Academy</h2>
+              <br />
+              <p style="font-size: 18px; margin-left: 5px; text-align: justify">
+                • Digital Painting master - 2019
+              </p>
+              <br><br>
+              <h2 style="font-size: 30px; text-align: center;">Software</h2>
+              <br />
+              <div class="software">
+                <img src="sources\images\social-icons\maya.svg" />
+                <div class="software-spec">
+                  <p style="font-size: 18px; font-weight: bold">Maya</p>
+                  <p style="font-size: 13px">Generalist</p>
+                  <div class="skill-bar" style="margin-top: 5px">
+                    <div class="skill-per" per="80%" style="max-width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="software">
+                <img src="sources\images\social-icons\zbrush.svg" />
+                <div class="software-spec">
+                  <p style="font-size: 18px; font-weight: bold">Zbrush</p>
+                  <p style="font-size: 13px">Sculpting, Remeshing</p>
+                  <div class="skill-bar" style="margin-top: 5px">
+                    <div class="skill-per" per="60%" style="max-width: 60%"></div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="software">
+                <img src="sources\images\social-icons\substance.svg" />
+                <div class="software-spec">
+                  <p style="font-size: 18px; font-weight: bold">Substance Suite</p>
+                  <p style="font-size: 13px">Procedural, Painting</p>
+                  <div class="skill-bar" style="margin-top: 5px">
+                    <div class="skill-per" per="85%" style="max-width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="software">
+                <img src="sources\images\social-icons\blender.svg" />
+                <div class="software-spec">
+                  <p style="font-size: 18px; font-weight: bold;">Blender</p>
+                  <p style="font-size: 13px">Generalist</p>
+                  <div class="skill-bar" style="margin-top: 5px">
+                    <div class="skill-per" per="50%" style="max-width: 50%"></div>
+                  </div>
+                </div>
+              </div>
+              <br>
+            </div>
+            <div class="blocco_resume" style="background-color: #715cf3;">
+              <p style="font-size: 18px;">Qui puoi trovare il mio curriculum <br> Restiamo in contatto</p>
+              <br>
+              <div
+              class="blocco_cv"
+              onclick="location.href='sources/media/curriculum.pdf';"
+              style="cursor: pointer"
+            >
+              <h1 class="testo">DOWNLOAD CV</h1>
+            </div>
+            </div>
+          
+        </div>
+        <div class="colonna" style="flex-basis: 55%;">
+
+            <div id="hover" onclick="location.href='https://frankwy.artstation.com';" style="cursor: pointer; margin-bottom: 18px;">
+              <div id="centered_carousel">
+                <h1 id="art_carousel_b">PROSEGUI SU ARTSTATION</h1>
+              </div>
+              <div class="swiper mySwiper" style="z-index: -1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="sources\images\image1.jpg"
+                      alt=""
+                      style="object-fit: fill; width: 100%; border-radius: 10px"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="sources\images\image2.jpg"
+                      alt=""
+                      style="object-fit: fill; width: 100%; border-radius: 10px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="exp" class="blocco_resume" style="background-color: #715cf3; height: 100%;">
+              <h2 style="font-size: 30px; text-align: center;">Experience</h2>
+              <br>
+              <h3 style="text-align: left">3d Artist, Second Life</h3>
+              <p style="font-size: 15px; text-align: left">2018 - present</p>
+              <br />
+              <p style="font-size: 18px; text-align: left">
+                • Low-poly modeling <br />
+                • Texture painting <br />
+                • Baking, rendering, post-production
+              </p>
+              <br><br>
+              <h3 style="text-align: left">3D Mentorship, MAC Formazione</h3>
+              <p style="font-size: 15px; text-align: left">2023 - present</p>
+              <br />
+              <p style="font-size: 18px; text-align: left">
+                • 3D generalist pipeline: (Modeling, Sculpting, Texturing, Lighting) <br />
+                • Blueprint creation (UE5) <br />
+              </p>
+              <br><br>
+              <h3 style="text-align: left">3D Artist, AILIME S.R.L.</h3>
+              <p style="font-size: 15px; text-align: left">2021 - 2022</p>
+              <br />
+              <p style="font-size: 18px; text-align: left">
+                • Procedural texturing <br />
+                • Lighting, LookDev, Rendering <br />
+              </p>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="contenitore" style="padding: 15px; margin-bottom: 40px;">
+      <h1 style="color: white"> Hai bisogno di una consulenza?</h1>
+      <br>
+      <p style="color: white; text-align: justify">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ad
+        rerum modi saepe? Labore dolorum repellendus tenetur illum cupiditate
+        dicta exercitationem ut, autem alias aliquam, quae est ea iste totam
+        quisquam nesciunt sequi at libero, dolorem corporis nihil vero eligendi.
+      </p>
+      <br />
+      <div style="display: flex; flex-direction: row; vertical-align: middle;">
+        <p style="color: white; font-size: 21px;">Lascia un messaggio</p>
+        <a class="footer-link" style="margin-left: 10px;" href="#"
+            ><img src="sources\images\social-icons\mail.svg"
+          /></a>
+      </div>
+    </div>
+    <footer class="sticky-footer">
+      <div class="footer-box">
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\instagram.svg"
+        /></a>
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\artstation.svg"
+        /></a>
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\linkedin.svg"
+        /></a>
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\mail.svg"
+        /></a>
+      </div>
+      <p>© 2023 | made with love by ptonilane</p>
+    </footer>
+    <script src="sources/js/swiper-bundle.min.js"></script>
+    <script src="sources/js/script-reviews.js"></script>
+  </body>
+</html>

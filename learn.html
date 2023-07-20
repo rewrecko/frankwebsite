@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- site style -->
+    <link rel="stylesheet" href="sources\css\style.css" />
+    <link rel="stylesheet" href="sources\css\fonts.css" />
+    <!-- menu style -->
+    <link rel="stylesheet" href="sources\css\style_menu.css" />
+    <!-- footer style -->
+    <link rel="stylesheet" href="sources/css/footer.css" />
+    <title>Learn • Francesco Conte</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo_box" onclick="location.href='#';">
+        <img id="img_pic" src="sources\images\image_logo.png" />
+        <label class="logo">frank_withyou</label>
+      </div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <img
+          id="open"
+          onclick="menu()"
+          style="vertical-align: middle; display: inline"
+          src="sources\images\social-icons\hamburger.svg"
+        />
+        <img
+          id="close"
+          onclick="menu()"
+          style="vertical-align: middle; display: none"
+          src="sources\images\social-icons\cross-medium.svg"
+        />
+        <script src="sources/js/script-menu.js"></script>
+      </label>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="contatti.html">contact</a></li>
+        <li><a class="active" href="#">learn</a></li>
+        <li><a href="#">feedback</a></li>
+      </ul>
+    </nav>
+    <div class="contenitore">
+      <section
+        class="colonne"
+        style="
+          background-color: #715cf3;
+          border-radius: 10px;
+          margin: 10px;
+          padding: 10px;
+        "
+      >
+        <div
+          id="bio"
+          class="colonna"
+          style="align-items: left; flex-basis: 20%"
+        >
+          <img id="profile_picture" src="sources\images\profile_picture.jpg" />
+        </div>
+        <div
+          class="colonna"
+          style="
+            justify-content: center;
+            flex-basis: 70%;
+            row-gap: 10px;
+            color: white;
+          "
+        >
+          <h1 style="font-size: 42px">Chi sono</h1>
+          <h2 style="font-size: 30px">3D Artist - Texturing, Lookdev</h2>
+          <p style="font-size: 18px">
+            Ho lavorato come texture artist, per riprodurre materiale
+            fotografico in 3D. <br />
+            Uso tecniche di painting e texturing procedurale. <br />
+            Per presentare al meglio i progetti dei miei clienti ho sviluppato
+            competenze di lookdev e lighiting. Esperienza con i modelli low poly
+            ed il baking.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="contenitore">
+      <div
+        class="colonna"
+        style="color: white; text-align: left; margin: 10px; padding: 20px"
+      >
+        <h1 style="font-size: 42px">Entra nel mondo della grafica 3D!</h1>
+        <br />
+        <p style="font-size: 18px">
+          Offro corsi personalizzati per aiutarti a raggiungere i tuoi
+          obiettivi. Sfrutta al massimo il tuo potenziale e preparati per una
+          carriera di successo.
+        </p>
+      </div>
+    </div>
+    <div class="contenitore">
+      <iframe
+        id="video_yt"
+        src="https://www.youtube.com/embed/MoQ1tDllKHQ"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="padding: 10px; border-radius: 20px"
+      ></iframe>
+    </div>
+    <div class="contenitore">
+      <h1 style="color: white; text-align: center; font-size: 45px">FAQ</h1>
+      <div class="colonne">
+        <hr class="solid" />
+        <div
+          class="colonna"
+          style="
+            color: white;
+            text-align: center;
+            text-align: left;
+            flex-basis: 40%;
+          "
+        >
+          <h2>Quali sono le principali aree di insegnamento?</h2>
+        </div>
+        <div
+          class="colonna"
+          style="color: white; text-align: left; flex-basis: 55%"
+        >
+          <p style="font-size: 21px">
+            Offro un percorso flessibile, mirato a dotarti degli strumenti
+            pratici e della competenze mentali per padroneggiare la computer
+            grafica. Ti guiderò dai fondamentali di modellazione e sculpting
+            fino a scoprire i segreti del texture painting o procedurale, il
+            lighting e il lookdev. Il mio obiettivo è trasmetterti il "come
+            fare", mantenendo l'attenzione sul "perchè" dietro ogni tecnica.
+          </p>
+        </div>
+      </div>
+      <div class="colonne">
+        <hr class="solid" />
+        <div
+          class="colonna"
+          style="
+            color: white;
+            text-align: center;
+            text-align: left;
+            flex-basis: 40%;
+          "
+        >
+          <h2>Posso personalizzare il programma in base ai miei obiettivi?</h2>
+        </div>
+        <div
+          class="colonna"
+          style="color: white; text-align: left; flex-basis: 55%"
+        >
+          <p style="font-size: 21px">
+            Assolutamente! Il percorso è completamente personalizzabile.
+            Insieme, durante la fase preliminare, individueremo i tuoi obiettivi
+            principali per creare un programma su misura. Il mio approccio si
+            basa sulla personalizzazione e sull'adattamento alle tue preferenze,
+            tenendo conto anche dei settori che ti interessano maggiormente,
+            come l'animazione, il cinema o i videogiochi.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="contenitore">
+      <div class="colonne" style="gap: 20px">
+        <div
+          class="colonna"
+          style="
+            background-color: #715cf3;
+            color: white;
+            text-align: left;
+            flex-basis: 40%;
+            padding: 20px;
+          "
+        >
+          <h1 style="font-size: 36px; padding: 10px;">Scatena il tuo potenziale creativo!</h1>
+          <br />
+          <h2 style="padding: 10px;">
+            Iniziamo da una call conoscitiva, ma non aspettare! I posti sono
+            limitati.
+          </h2>
+          <br />
+          <div class="blocco" style="background-color: blueviolet">
+            <h2 class="testo">PRENOTA ORA</h2>
+          </div>
+        </div>
+        <div
+          id="foto_2"
+          class="colonna learn_sfondo"
+          style="flex-basis: 55%"
+        ></div>
+      </div>
+    </div>
+    <footer class="sticky-footer">
+      <div class="footer-box">
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\instagram.svg"
+        /></a>
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\artstation.svg"
+        /></a>
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\linkedin.svg"
+        /></a>
+        <a class="footer-link" href="#"
+          ><img src="sources\images\social-icons\mail.svg"
+        /></a>
+      </div>
+      <p>© 2023 | made with love by ptonilane</p>
+    </footer>
+  </body>
+</html>
