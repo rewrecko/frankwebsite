@@ -139,7 +139,8 @@ a:hover {
     position: fixed;
     width: 100%;
     height: auto;
-    background-color: #2f1ca4;
+    background-color: #916eb3;
+    background-image: linear-gradient(#916eb3, #e05e5e);
     top: 90px;
     top: -100%;
     text-align: center;
