@@ -127,6 +127,11 @@ header {
   transition: 0.3s;
 }
 
+.blocco_cv:hover {
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
 .blocco_2:hover {
   transform: translateY(-5px);
 }
