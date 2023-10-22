@@ -23,7 +23,7 @@ body {
   column-gap: 20px;
 }
 
-.col {
+.colonna-home {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -214,7 +214,7 @@ a:link {
     flex-direction: column-reverse;
   }
 
-  .col {
+  .colonna-home {
     flex-basis: 100% !important;
   }
 
@@ -267,7 +267,7 @@ a:link {
     flex-direction: column-reverse;
   }
 
-  .col {
+  .colonna-home {
     flex-basis: 100% !important;
     margin-bottom: 10px;
   }
